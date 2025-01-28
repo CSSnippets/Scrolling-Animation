@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scroll Animation</title>
+    <style>
+        :root {
+            --bg-color: #fb6f92;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            min-width: 100vw;
+            min-height: 100vh;
+            background: #282828;
+        }
+
+        .scroll-element {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            width: 100%;
+            margin: 100px 0 0 100px;
+        }
+
+        .block {
+            height: 170px;
+            width: 300px;
+            margin: 50px;
+            animation: scrolling linear;
+            animation-timeline: view();
+            animation-range: entry 0% cover 50%;
+        }
+
+        .block:nth-child(1) {
+            background: #f4f1de;
+        }
+
+        .block:nth-child(2) {
+            background: #e07a5f;
+            width: 500px;
+        }
+
+        .block:nth-child(3) {
+            background: #bc4749;
+            width: 500px;
+        }
+
+        .block:nth-child(4) {
+            background: #f2cc8f;
+        }
+
+        .block:nth-child(5) {
+            background: #38a3a5;
+        }
+
+        .block:nth-child(6) {
+            background: #9a8c98;
+            width: 400px;
+        }
+
+        .block:nth-child(7) {
+            background: #e07a5f;
+        }
+
+        .block:nth-child(8) {
+            background: #f4f1de;
+            width: 500px;
+        }
+
+        .block:nth-child(9) {
+            background: #9a8c98;
+            width: 500px;
+        }
+
+        .block:nth-child(10) {
+            background: #38a3a5;
+        }
+
+        .block:nth-child(11) {
+            background: #f2cc8f;
+        }
+
+        .block:nth-child(12) {
+            background: #e07a5f;
+            width: 400px;
+        }
+
+        .block:nth-child(13) {
+            background: #bc4749;
+            width: 500px;
+        }
+
+        .block:nth-child(14) {
+            background: #9a8c98;
+        }
+
+        .block:nth-child(15) {
+            background: #f4f1de;
+        }
+
+        .block:nth-child(16) {
+            background: #38a3a5;
+            width: 500px;
+        }
+
+        .block:nth-child(17) {
+            background: #f4f1de;
+        }
+
+        .block:nth-child(18) {
+            background: #e07a5f;
+            width: 500px;
+        }
+
+        .block:nth-child(19) {
+            background: #bc4749;
+            width: 500px;
+        }
+
+        .block:nth-child(20) {
+            background: #f2cc8f;
+        }
+
+        .block:nth-child(21) {
+            background: #38a3a5;
+        }
+
+        .block:nth-child(22) {
+            background: #9a8c98;
+            width: 400px;
+        }
+
+        .block:nth-child(23) {
+            background: #e07a5f;
+        }
+
+        .block:nth-child(24) {
+            background: #f4f1de;
+            width: 500px;
+        }
+
+        .block:nth-child(25) {
+            background: #9a8c98;
+            width: 500px;
+
+        }
+
+        .block:nth-child(26) {
+            background: #38a3a5;
+        }
+
+        .block:nth-child(27) {
+            background: #f2cc8f;
+        }
+
+        .block:nth-child(28) {
+            background: #e07a5f;
+            width: 400px;
+        }
+
+        .block:nth-child(29) {
+            background: #bc4749;
+            width: 500px;
+        }
+
+        .block:nth-child(30) {
+            background: #9a8c98;
+        }
+
+        .block:nth-child(31) {
+            background: #f4f1de;
+        }
+
+        .block:nth-child(32) {
+            background: #38a3a5;
+            width: 500px;
+        }
+
+        @keyframes scrolling {
+            from {
+                opacity: 0;
+                clip-path: inset(50% 50% 50% 50%);
+            }
+
+            to {
+                opacity: 1;
+                clip-path: inset(0% 0% 0% 0%);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="scroll-element">
+        <div class="block"></div>
+        <div class="block"></div>
+        <div class="block"></div>
+        <div class="block"></div>
+        <div class="block"></div>
+        <div class="block"></div>
+        <div class="block"></div>
+        <div class="block"></div>
+        <div class="block"></div>
+        <div class="block"></div>
+        <div class="block"></div>
+        <div class="block"></div>
+        <div class="block"></div>
+        <div class="block"></div>
+        <div class="block"></div>
+        <div class="block"></div>
+        <div class="block"></div>
+        <div class="block"></div>
+        <div class="block"></div>
+        <div class="block"></div>
+        <div class="block"></div>
+        <div class="block"></div>
+        <div class="block"></div>
+        <div class="block"></div>
+        <div class="block"></div>
+        <div class="block"></div>
+        <div class="block"></div>
+        <div class="block"></div>
+        <div class="block"></div>
+        <div class="block"></div>
+        <div class="block"></div>
+        <div class="block"></div>
+    </div>
+</body>
+
+</html>
